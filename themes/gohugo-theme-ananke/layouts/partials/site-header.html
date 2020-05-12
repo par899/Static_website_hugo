@@ -1,4 +1,65 @@
-{{ $featured_image := .Param "featured_image"}}
+<style>
+  @media (min-width: 320px) and (max-width: 480px) {.header_class{
+                                                                    font-size:25px;
+                                                                    text-align:left;
+                                                              }
+                                                              .des_class{
+                                                                font-size:18px;
+                                                                text-align:left;
+                                                              }   
+
+  }
+  @media (min-width: 320px) and (max-width: 480px) and (orientation: landscape)  {.header_class{
+                                                                    font-size:25px;
+                                                                    text-align:center;
+                                                              }
+                                                              .des_class{
+                                                                font-size:18px;
+                                                                text-align:center;
+                                                              }   
+
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+          .header_class{
+                        font-size:25px;
+                        text-align:center;
+                        }
+          .des_class{
+                      font-size:18px;
+                      text-align:center;
+                    } 
+  }
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .header_class h2{
+                        font-size:40px;
+                        text-align:center;
+                        }
+          .des_class h3{
+                      font-size:30px;
+                      text-align:center;
+                    } 
+  }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header_class h2{
+                        font-size:35px;
+                        text-align:center;
+                        }
+          .des_class h3{
+                      font-size:30px;
+                      text-align:center;
+                    } 
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .header_class h2{
+                        font-size:40px;
+                        text-align:center;
+                        }
+          .des_class h3{
+                      font-size:30px;
+                      text-align:center;
+                    } 
+}
+</style>{{ $featured_image := .Param "featured_image"}}
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
@@ -12,12 +73,12 @@
           {{ .Title | default .Site.Title }}
         </h1>-->
         {{ with .Params.heading }}
-          <h2 class="f2 f-subheadline-l fw2 " style="color:white;">
+          <h2 class="f2 f-subheadline-l fw2  header_class" style="color:white;">
             {{ . }}
           </h2>
         {{ end }}
         {{ with .Params.description }}
-          <h3 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+          <h3 class="fw1 f5 f3-l white-80 measure-wide-l center mt3 des_class">
             {{ . }}
           </h3>
         {{ end }}

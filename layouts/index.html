@@ -183,7 +183,7 @@
       }
 
   .about_us_col2 img {
-    margin-top: -74px;
+    margin-top: -100px;
     margin-left:  0px;
     height: 100%;
     width: 100%;
@@ -370,16 +370,58 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    body{font-size:15px;}
+  .section1_abus
+  {
+    font-size: 10px;
+    font-weight:500;
+  }
+   
     .about_us_col1_first
     {
       margin:20px;
     }
     p{
         font-size:20px;
+    }  
+    .about_us_col2 img {
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 100%;
+        width: 100%;
     }
-  
-
+    .abus-col2-con-p p {
+          margin-top: 0px;
+          padding-top: 0px;
+          
+      }
+      .my2_pb_text_inner
+      {
+        float:left;
+      }
+    .my2_pb_text_inner p
+    {
+      font-size: 14px;
+      text-align: left!important;
+      color: rgba(0,0,0,0.02)!important;
+    }
+    .my2_pb_text_2 h2 {
+    font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 30px;
+    line-height: 1.4em;
+    text-align:left;
+    }
+    .my2_pb_column_1_3 h4,
+     .my2_pb_column_2_5 h4,
+      .my2_pb_column_1_4 h4,
+       .my2_pb_column_1_5 h4,
+        .my2_pb_column_1_6 h4 {
+    font-size: 20px!;
+    font-weight:500;
+    color: #333;
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+      }
 }
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -393,12 +435,34 @@ body{font-size:18px;}
 {
   margin:20px;
 }
-p{
-        font-size:15px;
-    }
+      p{
+        font-size:18px;
+        }
     .about_us_main_row {
     margin-left: 46px;
-}
+    }
+    .about_us_col2 img {
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .my2_pb_text_inner p
+    {
+      font-size: 14px;
+      text-align: left!important;
+      color: rgba(0,0,0,0.02)!important;
+    }
+    .my2_pb_text_2 h2 {
+    font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 30px;
+    line-height: 1.4em;
+    text-align:left;
+    }
+    .my2_pb_column_1_3 h4, .my2_pb_column_2_5 h4, .my2_pb_column_1_4 h4, .my2_pb_column_1_5 h4, .my2_pb_column_1_6 h4 {
+    font-size: 18px;
+    font-weight:500;
+      }
 }
 /*
   ##Device = Tablets, Ipads (landscape)
@@ -715,6 +779,12 @@ img {
     width: 100%!important;
 }
 
+.my2_pb_text_inner p
+    {
+      font-size: 14px;
+      text-align: center;
+      color: rgba(0,0,0,0.02)!important;
+    }
 
 .my2_pb_text_2 h2 {
     font-family: 'Share Tech',Helvetica,Arial,Lucida,sans-serif;
@@ -823,17 +893,41 @@ padding-bottom:5%;
   
 
 }
+.my_b_posts_nav a,
+    .my_b_row,
+    .my_b_row_inner,
+    .my_b_column,
+    .my_b_module,
+    .my_b_counters .my_b_counter_container,
+    .my_b_portfolio_item,
+    .my_b_pricing_table,
+    .my_b_all_tabs,
+    .my_b_tab,
+    .my_b_slide,
+    .my_b_with_background {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+.my_b_row {
+        width: 100%;
+        max-width: 1080px;
+        margin: auto;
+        position: relative;
+
+    }
+
 </style>
 <body>
 <div class="container-fluid  section1_abus">
-  <div class="row about_us_main_row">
-  <div class="row  abus_content ">   
+  <div class="row about_us_main_row .my_b_row">
+  <div class="row  abus_content .my_b_row ">   
     
         5s3s
         <p></p>
         <h2>About us</h2>        
   </div><!--abus_content-->
-  <div class="row about_us_div_row ">
+  <div class="row about_us_div_row my_b_row">
     <div class="col-lg-6 about_us_col1_first_abus_content abus-col2-con-p section1_abus_col">        
       <p>We are a full house digital branding &amp; Development company providing Branding Services, Social Media
         Marketing, Mobile App, Web Design &amp; Web Development. We assure time-bound services to our customers and
@@ -841,7 +935,7 @@ padding-bottom:5%;
         <a href="http://localhost:1313">5s3s</a> believe in the passion for bringing more digital innovations to
         integrate marketing and branding.
       </p> 
-      <div class=" button_div" >
+      <div class="row  button_div" >
         <a class="et_pb_button_0 " href="http://www.5s3s.ca/about-us/" target="_blank">learn more</a>
       </div>       
   </div>    
@@ -864,13 +958,13 @@ padding-bottom:5%;
 <div id="services-01" class="containner-fluid my2_pb_section my2_pb_section_2 my2_section_regular" style="background-color: #fff;padding-top:10px;padding-bottom:10px; ;">
 				
   <div class="row my2_pb_row my2_pb_row_1">
-  <div class="my2_pb_column my2_pb_column_4_4 my2_pb_column_2  my2_pb_css_mix_blend_mode_passthrough et-last-child" style=" padding-left: 291px;">
+  <div class="col-lg-12 my2_pb_column my2_pb_column_4_4 my2_pb_column_2  my2_pb_css_mix_blend_mode_passthrough et-last-child">
   
   
-  <div class="my2_pb_module my2_pb_text my2_pb_text_2  my2_pb_text_align_center my2_pb_bg_layout_light">
+  <div class="row my2_pb_module my2_pb_text my2_pb_text_2  my2_pb_text_align_center my2_pb_bg_layout_light">
   
   
-  <div class="my2_pb_text_inner">SERVICES<p></p>
+  <div class="row my2_pb_text_inner"><p>SERVICES</p></div>
 <h2>What We Do</h2></div>
 </div> <!-- .my2_pb_text -->
 </div> <!-- .my2_pb_column -->
