@@ -18,7 +18,7 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 [params]
-  favicon = "/images/fav5s3s.ico"
+  favicon = "https://secureservercdn.net/198.71.233.64/01f.9a2.myftpupload.com/wp-content/uploads/2019/02/Favicon-Color-153x153.jpg?time=1587496168"
   description = "The last theme you'll ever need. Maybe."
   facebook = ""
   twitter = "https://twitter.com/GoHugoIO"
