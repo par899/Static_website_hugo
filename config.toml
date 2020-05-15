@@ -1,5 +1,5 @@
-title = "5s3s"
-baseURL = "https://dina_gill_14.gitlab.io/5s3s-hugo-website"
+title = "5s3s"e
+baseURL ="https://example.com"
 languageCode = "en-us"
 theme = "gohugo-theme-ananke"
 publishDir="docs"
