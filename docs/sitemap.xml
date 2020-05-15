@@ -3,19 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://dina_gill_14.gitlab.io/5s3s-hugo-website/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://dina_gill_14.gitlab.io/5s3s-hugo-website/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://dina_gill_14.gitlab.io/5s3s-hugo-website/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
